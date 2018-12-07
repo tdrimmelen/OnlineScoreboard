@@ -49,7 +49,7 @@ namespace OnlineScoreboard
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            CloudStorageAccount myAccount = new CloudStorageAccount(new StorageCredentials("korfballdata",), true);
+            CloudStorageAccount myAccount = new CloudStorageAccount(new StorageCredentials("korfballdata",<Add storage key>), true);
 
             // Create the table client.
             CloudTableClient tableClient = myAccount.CreateCloudTableClient();
