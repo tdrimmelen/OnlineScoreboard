@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-using Microsoft.WindowsAzure.Storage;
-using Microsoft.WindowsAzure.Storage.Auth;
-using Microsoft.WindowsAzure.Storage.Table;
+using Microsoft.Azure.Storage;
+using Microsoft.Azure.Storage.Auth;
+using Microsoft.Azure.CosmosDB.Table;
 
 namespace OnlineScoreboard
 {
@@ -21,9 +21,9 @@ namespace OnlineScoreboard
 
         public ScoreEntity() { }
 
-        public int home { get; set; }
+        public long home { get; set; }
 
-        public int guest { get; set; }
+        public long guest { get; set; }
         
         public string status { get; set; }
     }
@@ -38,9 +38,9 @@ namespace OnlineScoreboard
 
         public TimeEntity() { }
 
-        public int minute { get; set; }
+        public long minute { get; set; }
 
-        public int second { get; set; }
+        public long second { get; set; }
 
         public string status { get; set; }
     }
@@ -49,7 +49,7 @@ namespace OnlineScoreboard
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            CloudStorageAccount myAccount = new CloudStorageAccount(new StorageCredentials("korfballdata", "MRTKQbWdclaeO3ceOKnIryOiuIRr4/kypWsoGzDmL2+Q3JMxpUB/2rRGH6AxFyMB5lmaW/iFIEAGeuB0PxBeFA=="), true);
+            CloudStorageAccount myAccount = new CloudStorageAccount(new StorageCredentials("korfballdata",), true);
 
             // Create the table client.
             CloudTableClient tableClient = myAccount.CreateCloudTableClient();
