@@ -24,8 +24,8 @@
     <TargetFrameworkProfile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
-    <ApplicationInsightsResourceId>/subscriptions/957c3d75-13e5-4572-bb0f-95394d1b915a/resourcegroups/ApplicationInsights-ScoreBoard/providers/microsoft.insights/components/OnlineScoreboard</ApplicationInsightsResourceId>
-    <ApplicationInsightsAnnotationResourceId>/subscriptions/957c3d75-13e5-4572-bb0f-95394d1b915a/resourcegroups/Default-ApplicationInsights-EastUS/providers/microsoft.insights/components/OnlineScoreboard</ApplicationInsightsAnnotationResourceId>
+    <ApplicationInsightsResourceId>/subscriptions/78b6ce15-f8c4-4d9c-b31a-0c3fd8d15815/resourcegroups/top-scoreboardpusher/providers/microsoft.insights/components/onlinescoreboard</ApplicationInsightsResourceId>
+    <ApplicationInsightsAnnotationResourceId>/subscriptions/78b6ce15-f8c4-4d9c-b31a-0c3fd8d15815/resourceGroups/top-scoreboardpusher/providers/microsoft.insights/components/onlinescoreboard</ApplicationInsightsAnnotationResourceId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
